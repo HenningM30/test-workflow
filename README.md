@@ -16,11 +16,11 @@ os.name: Mac OS X
 
 [None]
 
-##Image Data Location
+## Image Data Location
 
 Loaded from the web. Loading procedure is also coded in the macro. 
 (Otherwise, place a download link).
 
-##Workflow Execution Instruction
+## Workflow Execution Instruction
 
 Run the ImageJ macro in Fiji.
