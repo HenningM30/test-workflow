@@ -10,14 +10,17 @@ run("HeLa Cells (1.3M, 48-bit RGB)");
 //split channels
 run("Split Channels");
 
-//duplicate blue channel
-//run("Duplicate...", "title=C3-hela-cells-1blue.tif");
+//set background black
+run("Options...", "iterations=1 count=1 black");
 
-//thresholding
+//threshold MayEntropy
 run("Auto Threshold", "method=MaxEntropy white");
 
-//select nucleus with wand
-//doWand(293, 177);
+//measurement settings
+run("Set Measurements...", "area mean standard min centroid center shape integrated redirect=None decimal=3");
 
-//Measuring area
-//run("Measure");
+//analyze particels
+run("Analyze Particles...", "display exclude clear include");
+
+//save data
+saveAs("Results", "/Users/henningmuhlenbeck/Documents/GitHub/test-workflow/myfirstpony_results.csv");
