@@ -3,6 +3,8 @@
  
  [![DOI](https://zenodo.org/badge/213928559.svg)](https://zenodo.org/badge/latestdoi/213928559)
 
+## Version
+2.0: Cloned from remote repo to local, then edited, then changes committed and pushed
 
 ## Requirements
 
